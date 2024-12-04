@@ -6,7 +6,8 @@ public class Main {
         ArrayList<Financing> financings = new ArrayList<>();
 
         // Cadastrando os financiamentos
-        for (int i = 1; i <= 2; i++) {
+        int financialCount = 4 - 1; // 4 financiamentos
+        for (int i = financialCount; i <= 2; i++) {
             System.out.printf("=== Financiamento %d ===%n", i);
             double propertyAmount = ui.inputPropertyAmount();
             int deadlineFinancing = (int) ui.inputDeadlineFinancing();
